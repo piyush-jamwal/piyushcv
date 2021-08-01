@@ -6,10 +6,7 @@ class Header extends Component {
   render() {
     if (!this.props.data) return null;
 
-    const project = this.props.data.project;
-    const github = this.props.data.github;
-    const name = this.props.data.name;
-    const description = this.props.data.description;
+    const name = "Piyush Jamwal";
 
     return (
       <header id="home">
@@ -42,11 +39,11 @@ class Header extends Component {
               </a>
             </li>
 
-            <li>
+            {/* <li>
               <a className="smoothscroll" href="#portfolio">
                 Works
               </a>
-            </li>
+            </li> */}
 
             <li>
               <a className="smoothscroll" href="#contact">
@@ -62,18 +59,23 @@ class Header extends Component {
               <h1 className="responsive-headline">{name}</h1>
             </Fade>
             <Fade bottom duration={1200}>
-              <h3>{description}.</h3>
+              <h3>
+                I am a front end developer and a core Biologist. I use react,
+                redux, typescript to develop Android/iOS, web based applications
+                . In addition to this I also do freelancing. Please have a look
+                at my CV to get more insight of me.
+              </h3>
             </Fade>
             <hr />
             <Fade bottom duration={2000}>
-              <ul className="social">
+              {/* <ul className="social">
                 <a href={project} className="button btn project-btn">
                   <i className="fa fa-book"></i>Project
                 </a>
                 <a href={github} className="button btn github-btn">
                   <i className="fa fa-github"></i>Github
                 </a>
-              </ul>
+              </ul> */}
             </Fade>
           </div>
         </div>
